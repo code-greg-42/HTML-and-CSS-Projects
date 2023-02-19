@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+    </head>
+    <nav style="position:sticky; padding:10px; text-align:center; width:100%; top:0px;">
+        <a href="#home">Home</a>
+        <a href="#players">Players</a>
+        <a href="#videos">Videos</a>
+        <a href="#reservations">Reserve</a>
+    </nav>
+    <body>
+        <section>
+            <div id="home">
+                <div>
+                    <div>
+                        <h1>Book a time to meet your favorite phillies players!</h1>
+                        <p>Welcome to our website where you can get up close and personal with your favorite Philadelphia Phillies players! We offer exclusive access to meetups with Phillies players, where you can chat, get autographs, and even take photos with the team.
+                        Our meetups are perfect for die-hard Phillies fans who want to experience the thrill of meeting their idols. Whether you're a lifelong fan or a new supporter, our meetups provide an opportunity to connect with the players on a personal level and create unforgettable memories.
+                        You'll get to hear behind-the-scenes stories, and get insider knowledge on what it's like to play for the Phillies.</p>
+                        <p>Don't miss out on this once-in-a-lifetime opportunity to meet your favorite Phillies players. Browse our available players and book your spot today!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="players">
+                <h3>Players you can meet!</h3>
+                <div>
+
+                    <!-- PHOTO CONTAINER 1 -->
+					<div>
+                        <p>Aaron Nola</p>
+						<div>
+							<img src="./media_files/aaron_nola_pic.png" alt="aaron nola">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 1 -->
+
+                    <!-- PHOTO CONTAINER 2 -->
+					<div>
+                        <p>Bryce Harper</p>
+						<div>
+							<img src="./media_files/bryce_harper_pic.png" alt="bryce harper">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 2 -->
+
+                    <!-- PHOTO CONTAINER 3 -->
+					<div>
+                        <p>J.T. Realmuto</p>
+						<div>
+							<img src="./media_files/jt_realmuto_pic.png" alt="j.t. realmuto">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 3 -->
+
+                    <!-- PHOTO CONTAINER 4 -->
+					<div>
+                        <p>Kyle Schwarber</p>
+						<div>
+							<img src="./media_files/kyle_schwarber_pic.png" alt="kyle schwarber">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 4 -->
+
+                    <!-- PHOTO CONTAINER 5 -->
+					<div>
+                        <p>Trea Turner</p>
+						<div>
+							<img src="./media_files/trea_turner_pic.png" alt="trea turner">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 5 -->
+
+                    <!-- PHOTO CONTAINER 6 -->
+					<div>
+                        <p>Zack Wheeler</p>
+						<div>
+							<img src="./media_files/zack_wheeler_pic.png" alt="zack wheeler">
+						</div>
+					</div>
+					<!-- END PHOTO CONTAINER 6 -->
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="videos">
+                <div>
+                    <h3>Videos</h3>
+                        <div>
+                            <p>Phillies 24 Homers of the 2022 Postseason!</p>
+                        </div>
+
+                        <!-- VIDEO 1 CONTAINER -->
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kDC0DJtFjSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <!-- END VIDEO 1 CONTAINER-->
+                        <div>
+                            <p>Interviews from the 2022 Postseason:</p>
+                        </div>
+                        <!-- VIDEO 2 CONTAINER -->
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k6fWRLXc0do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section>
+			<div id="reservations">
+				<div>
+					<h3>Reserve your meetup time today!</h3>
+					<div>
+						<p>
+							Please pick a player and time and provide us with your contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+                                <label for="player-selector">Choose a player:</label>
+                                <select id="player-selector">
+                                    <option value="harper">Bryce Harper</option>
+                                    <option value="turner">Trea Turner</option>
+                                    <option value="realmuto">J.T. Realmuto</option>
+                                    <option value="schwarber">Kyle Schwarber</option>
+                                    <option value="nola">Aaron Nola</option>
+                                    <option value="wheeler">Zack Wheeler</option>
+                                </select><br>
+                                <label for="time-slot">Choose a time:</label>
+                                <input id="time-slot" class="reserve" type="datetime-local" value=""><br>
+                                <p>Enter your contact information:</p>
+								<input class="reserve" type="text" placeholder="First Name" value="">
+								<input class="reserve" type="text" placeholder="Last Name" value=""><br>
+								<input class="reserve" type="text" placeholder="Email Address" value="">
+								<input class="reserve" type="text" placeholder="Phone Number" value=""><br>
+								<div class="form-spacer">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </body>
+    <footer>
+        www.meetthephils.xyz &nbsp;| tech academy bootcamp &nbsp;|&nbsp; for learning purposes only &nbsp;|&nbsp; &copy; 2023
+    </footer>
+</html>
