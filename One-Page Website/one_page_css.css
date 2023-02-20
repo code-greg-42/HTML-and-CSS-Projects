@@ -1,0 +1,159 @@
+/* Apply a global box-sizing */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Set up a basic grid */
+  body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+  
+  /* Style the nav */
+  nav {
+    background-color: #212121;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav a {
+    color: white;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style the home section */
+  #home {
+    align-items: center;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #home h1 {
+    color: #212121;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    color: #212121;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the players section */
+  #players {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #players h3 {
+    color: #212121;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  #players div {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  #players div p {
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #players div img {
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+  }
+  
+  /* Style the videos section */
+  #videos {
+    background-color: #f2f2f2;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #videos h3 {
+    color: #212121;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  #videos div p {
+    color: #212121;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #videos div iframe {
+    height: 315px;
+    margin-bottom: 50px;
+    width: 560px;
+  }
+  
+  /* Style the reservations section */
+  #reservations {
+    align-items: center;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  #reservations {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+  }
+  
+  #reservations h3 {
+    color: #d62828;
+  }
+  
+  label {
+    color: #333333;
+  }
+  
+  .reserve {
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #d62828;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
