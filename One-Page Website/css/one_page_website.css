@@ -11,6 +11,7 @@ html {
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
   /* Style the nav */
@@ -143,10 +144,11 @@ html {
     color: #333333;
   }
   
-  .reserve {
+  .reserve, #player-selector {
     border: 2px solid #e0e0e0;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 5px;
   }
   
   input[type="submit"] {
@@ -156,4 +158,5 @@ html {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    margin-top: 10px;
   }
