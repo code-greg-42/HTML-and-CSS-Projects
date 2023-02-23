@@ -4,6 +4,7 @@
         <title></title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="./js/one_page_website.js" defer></script>
     </head>
     <nav style="position:sticky; padding:10px; text-align:center; width:100%; top:0px;">
         <a href="#home">Home</a>
@@ -12,6 +13,22 @@
         <a href="#reservations">Reserve</a>
     </nav>
     <body>
+        <section>
+        <div id="modal-background">
+            <div id="modal-container">
+                <img id="close-btn" onclick="close_modal()" src="./media_files/close-btn.png">close</img>
+                <div id="main-img-frame">
+                    <img id="main-img" src="" alt=""/>
+                </div>
+                <div id="bottom-img-frame">
+                    <img class="bottom-imgs" id="bottom-pic-1" src="" alt=""/>
+                    <img class="bottom-imgs" id="bottom-pic-2" src="" alt=""/>
+                    <img class="bottom-imgs" id="bottom-pic-3" src="" alt=""/>
+                </div>
+                <button id="next-btn" onclick="load_on_click()">Next</button>
+            </div>
+        </div>
+        </section>
         <section>
             <div id="home">
                 <div>
@@ -34,7 +51,7 @@
 					<div>
                         <p>Aaron Nola</p>
 						<div>
-							<img src="./media_files/aaron_nola_pic.png" alt="aaron nola">
+						    <img id="nola" onclick="roster_click(event)" src="./media_files/aaron_nola_pic.png" alt="aaron nola">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 1 -->
@@ -43,7 +60,7 @@
 					<div>
                         <p>Bryce Harper</p>
 						<div>
-							<img src="./media_files/bryce_harper_pic.png" alt="bryce harper">
+							<img id="harper" onclick="roster_click(event)" src="./media_files/bryce_harper_pic.png" alt="bryce harper">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 2 -->
@@ -52,7 +69,7 @@
 					<div>
                         <p>J.T. Realmuto</p>
 						<div>
-							<img src="./media_files/jt_realmuto_pic.png" alt="j.t. realmuto">
+							<img id="realmuto" onclick="roster_click(event)" src="./media_files/jt_realmuto_pic.png" alt="j.t. realmuto">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
@@ -61,7 +78,7 @@
 					<div>
                         <p>Kyle Schwarber</p>
 						<div>
-							<img src="./media_files/kyle_schwarber_pic.png" alt="kyle schwarber">
+							<img id="schwarber" onclick="roster_click(event)" src="./media_files/kyle_schwarber_pic.png" alt="kyle schwarber">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 4 -->
@@ -70,7 +87,7 @@
 					<div>
                         <p>Trea Turner</p>
 						<div>
-							<img src="./media_files/trea_turner_pic.png" alt="trea turner">
+							<img id="turner" onclick="roster_click(event)" src="./media_files/trea_turner_pic.png" alt="trea turner">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 5 -->
@@ -79,7 +96,7 @@
 					<div>
                         <p>Zack Wheeler</p>
 						<div>
-							<img src="./media_files/zack_wheeler_pic.png" alt="zack wheeler">
+							<img id="wheeler" onclick="roster_click(event)" src="./media_files/zack_wheeler_pic.png" alt="zack wheeler">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 6 -->
@@ -91,22 +108,6 @@
             <div id="videos">
                 <div>
                     <h3>Videos</h3>
-                        <div>
-                            <p>Phillies 24 Homers of the 2022 Postseason!</p>
-                        </div>
-
-                        <!-- VIDEO 1 CONTAINER -->
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kDC0DJtFjSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <!-- END VIDEO 1 CONTAINER-->
-                        <div>
-                            <p>Interviews from the 2022 Postseason:</p>
-                        </div>
-                        <!-- VIDEO 2 CONTAINER -->
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/k6fWRLXc0do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
                 </div>
             </div>
         </section>
