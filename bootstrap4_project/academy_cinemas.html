@@ -121,6 +121,42 @@
           </div>
           <!--END SHOWTIMES-->
 
+          <!-- MOVIE DEALS -->
+          <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+              <p class="lead">Check out our monthly deals...</p>
+              <!-- movie deals -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deals">
+                See our movie deals!
+              </button>
+              <!-- end movie deals -->
+            </div>
+          </div>
+
+          <!-- Movie Deals Modal -->
+          <!-- adds image and text to show deal -->
+          <div class="modal fade" id="deals" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content bg-info text-light">
+                <div class="modal-header text-center">
+                  <h5 class="modal-title w-100" id="deals-title">20% off King Kong!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img id="deals-promo" class="mw-100" src="./Img/king-kong-promo.jpg" alt="king kong closeup">
+                  <p id="deals-details" class="mt-4 text-center">Accept this deal to get 20% King Kong tickets on up to 4 tickets! Deal valid for any showtime this month. <em><small>*tickets must be purchased within 24 hours of accepting*</small></em></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Skip</button>
+                  <button type="button" class="btn btn-primary">Accept Deal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="text-center" id="rewards">
             <form>
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
