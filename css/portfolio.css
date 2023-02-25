@@ -87,7 +87,7 @@ footer {
     color: azure; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* This specifies the font family for text on our navbar */
     font-size: 20px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -105,7 +105,6 @@ footer {
 .Navbar a:hover {
     background-color: lightblue; /* Defines the background color that will display when you hover over the link */
     color: rgb(42,42,42); /* This defines the font color that will display when navbar a elements are hovered over */
-    font-weight: bold; /* This makes the text on the navbar bold when hovered over */
 }
 /***** END OF NAVBAR STYLING *****/
 
@@ -190,7 +189,7 @@ footer {
 
 /***** CONTACT FORM STYLING *****/
 /* input[type=text] targets all text input sections of the contact form */
-input[type=text] {
+input[type=text], input[type=email], input[type=tel] {
     width: 100%; /* Each input box covers the full width of the container */
     padding: 12px; /* Adds padding within the text box */
     border: 1px solid #ccc; /* Setting a solid border and its color */
@@ -203,7 +202,7 @@ input[type=text] {
 }
 
 /* Hover effects for input boxes */
-input[type=text]:hover {
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover {
     box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the text box when hovered over by the user */
 }
 
@@ -236,3 +235,62 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+#form-modal {
+    padding:3%;
+    height:450px;
+    width:600px;
+    margin:auto;
+    position:relative;
+}
+
+#modal-background {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:10;
+    background-color: rgba(0, 0, 0, .7);
+    display:none;
+}
+
+#close-btn {
+    height:32px;
+    width:32px;
+    position:absolute;
+    right:0;
+    transform:translateX(-50px);
+    cursor:pointer;
+}
+
+#close-btn:hover {
+    background-color:lightgray;
+}
+
+#contact-btn {
+    cursor:pointer;
+    float:right;
+    margin-right:10px;
+}
+
+#about-me-contact {
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+.about-arrow {
+    height:64px;
+    width:64px;
+    position:absolute;
+    cursor:pointer;
+}
+
+.about-arrow:hover {
+    background-color:gray;
+}
+
+#img-frame {
+    display:none;
+    object-fit: contain;
+}

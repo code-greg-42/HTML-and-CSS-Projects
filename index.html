@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Gregory Andersson</title>
+        <script src="index.js" defer></script>
         <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
     </head>
 
@@ -16,7 +17,7 @@
             <a class="active" href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
+            <a id="contact-btn" onclick="open_form()">Contact</a>
         </div>
 
         <!--Breaks inserted to add space between navbar and the first heading-->
@@ -58,13 +59,15 @@
             </div>
             <!--Right column-->
             <div class="Column_1">
-                <h1>About</h1>
-                <p>
+                <img id="about-up-arrow" onclick="load_on_click()" class="about-arrow" src="./images/up-arrow.png" alt="up-arrow"/>
+                <img id="img-frame" src="" alt="slideshow"/>
+                <h1 id="about-title">About</h1>
+                <p id="about-details">
                     I am a former professional poker player who loves to code! As a husband and dog dad, I enjoy hiking with my family and trying new restaurants. In my spare time, I enjoy both gaming and coding.
                     <br>
                     <br>I am a current of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Developer Boot Camp, and am also self-taught in the following programming languages: Python, JavaScript, Solidity, R, HTML, CSS and more.
                     <br>
-                    <br>I am an aspiring game developer and would love to work with you on your game. <a href="#Contact">Contact</a> me below!
+                    <br>I am an aspiring game developer and would love to work with you on your game. <a id="about-me-contact" onclick="open_form()">Contact</a> me for your project!
                 </p>
             </div>
         </div>
@@ -86,27 +89,25 @@
             </div>
         </div>
 
-        <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/gametime_pic.jpeg" alt="pic of gamers">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
+        <section>
+            <div id="modal-background">
+            <!--Contact form, modal-->
+            <div id="form-modal">
+                <img onclick="close_form()" id="close-btn" src="./images/close-button.png" alt="close btn">
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="https://formspree.io/f/xqkoqbel" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                     <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
+                        <input type="text" placeholder="Please enter your name here." required>
                     <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <input type="email" id="Email" name="Email" placeholder="Please enter your email." required>
+                    <label>Phone Number:</label>
+                        <input type="tel" id="phone-number" name="Phone Number" placeholder="Please enter your phone number." required>
                     <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="text" id="Message" name="Message" placeholder="Please write any message here.">
                         <input type="submit" value="SUBMIT">
                 </form>
             </div>
-        </div>
+            </div>
 
         <!--Footer section-->
         <footer>
